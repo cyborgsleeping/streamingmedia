@@ -1,0 +1,280 @@
+
+
+html {
+    background-color:#020659;
+}
+
+body {
+    margin:0 auto;
+width: 375px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color:#ffffff;
+}
+nav {background-color:#030A8c;
+    text-transform:uppercase;
+    grid-row:1/2;
+}
+nav ul {text-align:center;}
+nav :hover {background-color:#590242;}
+
+nav h2 {visibility:hidden;
+height: 1px;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+#muzak {font-variant:small-caps;}
+
+header {grid-row:2/3;
+padding:10px;
+background-color:#2104D9;
+background: linear-gradient(90deg,#2104D9 0%, #020659
+33%, #020659 66%, black 100%);
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+h2, h3 {font-size: 20px;
+color:#590242;
+line-height: 2em;
+}
+
+h4 {font-size: 20px;
+line-height:2em;}
+
+
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+.scroll {
+    display:grid; /*display: flex;*/ 
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+
+.scroll section {
+    margin:10px;
+    position: relative;
+}
+
+.scroll div {
+    position:absolute;
+    top:251px;
+    background-color: white;
+    padding: 5px;
+height: 50px;
+width: 350px;
+}
+
+audio {position:absolute;
+bottom:100px;
+left:5px;
+}
+
+#trending {background-color:white;
+    color:#590242;
+    }
+    #trending ::-webkit-scrollbar {
+    width:15px;
+    }
+    #trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #590242;
+    }
+    #trending ::-webkit-scrollbar-thumb {
+        background:#590242;
+        border-radius:5px;
+    }
+    #trending ::-webkit-scrollbar-thumb:hover {
+    background:#020659;
+    }
+
+#yourplaylists {
+    background-color:#2699FB;
+    text-align:center;
+    display:grid;
+overflow:scroll;
+
+}
+
+#curated {background-color:#030A8c;
+    overflow:scroll;
+    text-align: center;
+    display:grid;
+}
+
+
+@media screen and (min-width:834px) {
+
+    body {width:834px;}
+    label span, input {display:none;}
+
+   
+
+    ul {width:834px;
+    overflow:visible;
+    height: auto;
+    position: absolute;
+    top: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+li a {padding: 14px;}
+[href="#home"] {position:static;}
+a:hover, input:hover {background-color:#590242;}
+label span, input {display:none;}
+
+#playlists {display:grid;
+grid-template-columns:auto auto auto;
+}
+
+
+#best {background-color:#0D8DFB;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+
+#pumpkin 
+{background-color:#0D8DFB;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#storm
+{background-color:#0D8DFB;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+
+}
+#smoothjazz
+{background-color:#0D8DFB;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+#study
+{background-color:#0D8DFB;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#curated {display:grid;
+}
+
+#boozy {
+    background-color:#020659;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#dinner 
+{
+    background-color:#020659;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#mellow {
+    background-color:#020659;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#chill {
+    background-color:#020659;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+#sax {
+    background-color:#020659;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:5px;
+    margin:5px;
+}
+
+
+}
+
+footer {text-align:center;
+color:#590242;
+background-color:white;
+}
