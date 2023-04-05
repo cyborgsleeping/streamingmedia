@@ -12,7 +12,7 @@
     
     <nav>
         <!-- <h2>Main Navigation</h2> -->
-        <input type="checkbox" id="dropdown"/>
+        <input type="checkbox" id="dropdown">
         <label for="dropdown">
             <span></span></label>
     <ul>
@@ -30,72 +30,91 @@
 </header>
 
 <main>
+    
     <section id="trending">
 <h2>Trending Songs</h2>
 
 <div class="scroll">
+    
 <section>
-<h3>Aloma</h3>
-<p>Artist Cali</p>
+<figure>
 <img src="images/aloma-cover.png" alt="photo of a bird">
-<audio controls>
-    <source src="audio/aloma.mp3" type="audio/mpeg">
-    </audio>
+
+        <audio controls>
+            <source src="audio/aloma.mp3" type="audio/mpeg">
+            </audio>
+            <figcaption><h3>Aloma</h3>
+                <p>Artist Cali</p></figcaption>
+        </figure>
 </section>
 
 
 <section>
-<h3>My Road</h3>
-<p>Artist Nesterouk</p>
+<figure>
 <img src="images/my-road-cover.png" alt="road">
 <audio controls>
     <source src="audio/my-road.mp3" type="audio/mpeg">
     </audio>
+    <figcaption><h3>My Road</h3>
+        <p>Artist Nesterouk</p></figcaption>
+</figure>
 </section>
 
 
 <section>
-<h3>Papaya</h3>
-<p>Artist Dredstudio</p>
+<figure>
 <img src="images/papaya-cover.png" alt="papaya">
 <audio controls>
     <source src="audio/papaya.mp3" type="audio/mpeg">
     </audio>
+    <figcaption><h3>Papaya</h3>
+        <p>Artist Dredstudio</p></figcaption>
+</figure>
 </section>
 
 
 <section>
-<h3>Smoothies</h3>
-<p>Artist Black Rhomb</p>
+<figure>
 <img src="images/smoothies-cover.png" alt="smoothies">
+
+   
 <audio controls>
     <source src="audio/smoothies.mp3" type="audio/mpeg">
     </audio>
+    <figcaption><h3>Smoothies</h3>
+        <p>Artist Black Rhomb</p></figcaption> 
+</figure>
 </section>
 
 
 <section>
-<h3>Successful Performance</h3>
-<p>Artist Ricky Bombino</p>
+<figure>
 <img src="images/successful-performance-cover.png" alt="man rejoicing">
 <audio controls>
     <source src="audio/successful-performance.mp3" type="audio/mpeg">
     </audio>
+    <figcaption><h3>Successful Performance</h3>
+        <p>Artist Ricky Bombino</p></figcaption>
+</figure>
 </section>
 
 
 </div>
-
+<div id="moret">
 <button class="button" type="button">More trending</button>
+</div>
 
 
 </section>
 
 
-<section id="playlists">
-    <h3>Your Playlists</h3>
+<div id="playlists">
     
-<section id="yourplaylists">
+    
+
+    <section>
+        <h3>Your Playlists</h3>
+<div id="yourplaylists">
     
 
     
@@ -130,13 +149,17 @@
 <p>Background music to keep you going while you study. </p>
 </section>
 
-<button class="button" type="button">All your playlists</button>
 
+
+</div>
+<div id="all">
+    <button class="button" type="button">All your playlists</button>
+</div>
 </section>
 
+<section>
 <h3>Curated Playlists</h3>
-
-<section id="curated">
+<div id="curated">
     
     
     
@@ -171,12 +194,16 @@
 </section>
 
 
-</section>
-
-
+</div>
+<div id="morec">
     <button class="button" type="button">More curated</button>
-    
+</div>
 </section>
+
+    
+</div>
+
+
 </main>
 
 <footer>

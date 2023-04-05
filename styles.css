@@ -72,6 +72,7 @@ h4 {font-size: 20px;
 line-height:2em;}
 
 .button {
+    width:150px;
     border:0;
     border-radius:3px;
     padding: 5px;
@@ -134,10 +135,11 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     grid-template-columns: repeat(5, 1fr);
     overflow-x:auto;
     overflow-y:hidden;
+    
 }
 
 .scroll section {
-    margin:10px;
+    margin:15px;
     position: relative;
 }
 
@@ -150,8 +152,9 @@ height: 50px;
 width: 350px;
 }
 
-audio {position:absolute;
-bottom:100px;
+
+audio {position:relative;
+bottom:150px;
 left:5px;
 }
 
@@ -173,6 +176,8 @@ left:5px;
     #trending ::-webkit-scrollbar-thumb:hover {
     background:#020659;
     }
+
+
 
 #yourplaylists {
     background-color:#2699FB;
@@ -278,6 +283,8 @@ a:hover, input:hover {background-color:#590242;}
 label span, input {display:none;}
 
 [href="#home"] {position:static;}
+
+#moret, #all, #morec {text-align:right;}
 
 
 
